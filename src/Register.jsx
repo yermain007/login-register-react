@@ -20,9 +20,9 @@ const handleSubmit = (e) => {
             <input value={email} onChange={(e)=> setEmail(e.target.value)}   type="email" placeholder="email" id="email" name="email" />
             <label htmlFor="password">password</label>
             <input value={pass} onChange={(e)=> setPass(e.target.value)} type="password" placeholder="*********" id="password" name="password" />
-           
+            
         </form>
-        <button onClick={() =>props.onFormSwitch('login')}>already have an account? login here</button>
+        <button className="link-btn"  onClick={() =>props.onFormSwitch('login')}>already have an account? login here</button>
         </div>
     )
 }
